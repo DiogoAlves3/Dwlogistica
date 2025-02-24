@@ -1,0 +1,1180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header com endereço e telefone */
+.adreesandnumber {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.adreesandnumber section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.adreesandnumber img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logotipo img {
+  width: 150px;
+  height: auto;
+}
+
+.itensnav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.itensnav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Seção Principal (Banner) */
+.principal {
+  background-image: url('./img/back1.png'); /* Substitua pelo caminho correto da imagem */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.itens-principal {
+  padding: 20px;
+}
+
+.itens-principal p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.itens-principal h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004d99;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #003366;
+}
+
+/* Seção de Serviços */
+.servicos {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #004d99;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #004d99;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.section-footer .btn {
+  margin-top: 20px;
+}
+
+/* Seção Especialistas */
+.especialistas {
+  background-image: url('./img/back2.png'); /* Substitua pelo caminho correto */
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.especialistas h1 {
+  font-size: 36px;
+}
+
+.especialistas-itens ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.imagem-itens img {
+  width: 50px;
+  height: 50px;
+}
+
+.titulo-item {
+  font-size: 18px;
+  color: #004d99;
+  margin: 10px 0;
+}
+
+.descricao-item {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Seção Sobre Nós */
+.sobre-nos {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.header-sobre-nos h1 {
+  font-size: 32px;
+  color: #004d99;
+  margin-bottom: 10px;
+}
+
+.header-sobre-nos p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.conteudo-sobre-nos {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.imagem-sobre img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.descricao-sobre {
+  flex: 1;
+}
+
+.descricao-sobre p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.descricao-sobre .btn {
+  margin-top: 20px;
+}
+
+/* Itens Sobre Nós */
+.sobre-nos-itens ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.imagem-item img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer */
+footer {
+  background-color: #004d99;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.itens-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.item {
+  padding: 20px;
+}
+
+.item-1 img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.item-1 p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.item-1 a img {
+  width: 30px;
+  height: 30px;
+}
+
+.item-2 h2, .item-3 h2, .item-4 h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.item-2 ul, .item-3 ul {
+  list-style: none;
+}
+
+.item-2 a, .item-3 span, .item-4 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.item-4 address {
+  font-style: normal;
+  font-size: 14px;
+}
+
+/* Retângulo Final */
+.retangulo-final {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .cards, .especialistas-itens ul, .sobre-nos-itens ul, .itens-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .conteudo-sobre-nos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-sobre img {
+    width: 250px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .itensnav ul {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards, .especialistas-itens ul, .sobre-nos-itens ul, .itens-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .adreesandnumber {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .principal {
+    height: 300px;
+  }
+
+  .itens-principal h1 {
+    font-size: 36px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .especialistas h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar, .itensnav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .itensnav ul {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .principal {
+    height: 250px;
+  }
+
+  .itens-principal h1 {
+    font-size: 24px;
+  }
+}
+
+/* Estilo do menu hambúrguer */
+.menu-toggle {
+  display: none; /* Oculto por padrão em telas grandes */
+}
+
+.hamburger {
+  display: none; /* Oculto por padrão em telas grandes */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mostrar o menu hambúrguer e esconder o menu normal em telas menores */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .itensnav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .itensnav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  #menu-toggle:checked ~ .itensnav {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}
+
+/* Animações gerais para transições suaves */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Animação para o menu hambúrguer (já incluída no CSS anterior, mas reforçando) */
+.hamburger span {
+  transition: all 0.3s ease;
+}
+
+/* Animação para os botões */
+.btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background-color: #003366;
+}
+
+/* Animação para os cards dos serviços ao passar o mouse */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animação para os itens do menu de navegação */
+.itensnav a:hover {
+  color: #004d99;
+  text-decoration: underline;
+}
+
+/* Animação de fade-in para seções ao rolar (usando Intersection Observer) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-animate {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Aplicar animação nas seções principais */
+.principal, .servicos, .especialistas, .especialistas-itens, .sobre-nos, .sobre-nos-itens, footer {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animação para o menu hambúrguer ao abrir/fechar (reforçando o efeito) */
+#menu-toggle:checked ~ .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked ~ .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Animação para o menu dropdown ao abrir */
+.itensnav {
+  transition: all 0.3s ease;
+}
+
+/* Animações gerais para transições suaves */
+* {
+  transition: all 0.5s ease; /* Aumentei para 0.5s para uma animação mais visível */
+}
+
+/* Definição das animações personalizadas */
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classes para animações específicas */
+.section-animate-left {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-animate-right {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-animate-top {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-animate-bottom {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-animate-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideFromLeft 0.5s ease-out;
+}
+
+.section-animate-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideFromRight 0.5s ease-out;
+}
+
+.section-animate-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideFromTop 0.5s ease-out;
+}
+
+.section-animate-bottom.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideFromBottom 0.5s ease-out;
+}
+
+/* Aplicar animações às seções específicas */
+.principal {
+  animation: slideFromTop 0.5s ease-out;
+}
+
+.servicos {
+  animation: slideFromLeft 0.5s ease-out;
+}
+
+.especialistas {
+  animation: slideFromRight 0.5s ease-out;
+}
+
+.especialistas-itens {
+  animation: slideFromBottom 0.5s ease-out;
+}
+
+.sobre-nos {
+  animation: slideFromLeft 0.5s ease-out;
+}
+
+.sobre-nos-itens {
+  animation: slideFromRight 0.5s ease-out;
+}
+
+footer {
+  animation: slideFromBottom 0.5s ease-out;
+}
+
+/* Manter as animações dos botões, cards e menu existentes (se desejar) */
+.btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background-color: #003366;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.itensnav a:hover {
+  color: #004d99;
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none; /* Oculto por padrão em telas grandes */
+}
+
+.hamburger {
+  display: none; /* Oculto por padrão em telas grandes */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mostrar o menu hambúrguer e esconder o menu normal em telas menores */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .itensnav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+  }
+
+  .itensnav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    list-style: none; /* Garante que não haja marcadores de lista */
+  }
+
+  .itensnav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block; /* Garante que os links ocupem toda a largura */
+  }
+
+  #menu-toggle:checked ~ .itensnav {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #004d99;
+  color: #000000;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.itens-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  padding: 20px;
+}
+
+.item-1 .logo img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.item-1 p {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.item-1 a img {
+  width: 30px;
+  height: 30px;
+}
+
+.item-2 h2, .item-3 h2, .item-4 h2 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.item-2 ul, .item-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.item-2 a, .item-3 li {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.item-2 a:hover, .item-3 li:hover {
+  color: #b3d1ff;
+}
+
+.item-4 address {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.item-4 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.item-4 a:hover {
+  color: #b3d1ff;
+}
+
+/* Retângulo Final */
+.retangulo-final {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsividade para o footer */
+@media (max-width: 1024px) {
+  .itens-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .itens-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .item-1 .logo img {
+    width: 120px;
+  }
+
+  .item-2 h2, .item-3 h2, .item-4 h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 20px 10px;
+  }
+
+  .item {
+    padding: 15px;
+  }
+
+  .item-1 .logo img {
+    width: 100px;
+  }
+
+  .item-1 p {
+    font-size: 12px;
+  }
+
+  .item-2 h2, .item-3 h2, .item-4 h2 {
+    font-size: 14px;
+  }
+}
+
+.principal {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que o vídeo cubra toda a área, mantendo a proporção */
+  z-index: 1;
+}
+
+.itens-principal {
+  position: relative;
+  z-index: 2; /* Garante que o texto fique acima do vídeo */
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3); /* Opcional: adiciona um leve overlay para melhorar a legibilidade do texto */
+}
+
+.itens-principal p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.itens-principal h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004d99;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #003366;
+}
+
+/* Responsividade para o vídeo */
+@media (max-width: 768px) {
+  .principal {
+    height: 300px;
+  }
+
+  .itens-principal h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .principal {
+    height: 250px;
+  }
+
+  .itens-principal h1 {
+    font-size: 24px;
+  }
+}
+
+.especialistas-itens ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s ease; /* Adiciona transição suave para todas as mudanças */
+}
+
+.imagem-itens img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease; /* Animação para a imagem */
+}
+
+.titulo-item {
+  font-size: 18px;
+  color: #004d99;
+  margin: 10px 0;
+  transition: color 0.3s ease; /* Animação para o título */
+}
+
+.descricao-item {
+  font-size: 14px;
+  color: #666;
+  transition: color 0.3s ease; /* Animação para a descrição */
+}
+
+.item:hover {
+  transform: translateY(-5px); /* Eleva o item levemente ao passar o mouse */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar */
+  background-color: #f5f5f5; /* Leve mudança de cor de fundo */
+}
+
+.item:hover .imagem-itens img {
+  transform: scale(1.1); /* Aumenta ligeiramente a imagem */
+}
+
+.item:hover .titulo-item {
+  color: #003366; /* Escurece o título ao passar o mouse */
+}
+
+.item:hover .descricao-item {
+  color: #333; /* Escurece a descrição ao passar o mouse */
+}
+
+/* Responsividade (mantendo o que já existe) */
+@media (max-width: 1024px) {
+  .especialistas-itens ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .especialistas-itens ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.logotipo img {
+  width: 150px;
+  height: auto;
+}
+
+/* Estilo do menu normal */
+.itensnav {
+  display: flex;
+}
+
+.itensnav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.itensnav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.itensnav a:hover {
+  color: #004d99;
+  text-decoration: underline;
+}
+
+/* Estilo do menu hambúrguer */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mostrar o menu hambúrguer em telas menores */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .itensnav {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+  }
+
+  .itensnav.active {
+      display: flex;
+  }
+
+  .itensnav ul {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+      width: 100%;
+  }
+
+  .close-button {
+      display: block;
+      margin-bottom: 15px;
+  }
+
+  .close-btn {
+      padding: 10px 20px;
+      background-color: #004d99;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .close-btn:hover {
+      background-color: #003366;
+  }
+
+  /* Animação do ícone hambúrguer */
+  .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+/* Ocultar o botão de fechar por padrão */
+.close-button {
+  display: none;
+}
+
+/* No mobile, exibir o botão de fechar dentro do menu */
+@media (max-width: 768px) {
+  .close-button {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+nav a button{
+  background-color: #012E41;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

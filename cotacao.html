@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação de Frete</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #012E41, #035E73);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #012E41;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #035E73;
+        }
+        img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./img/Logo DW sem fundo 2.svg" alt="Logotipo">
+        <h2>Cotação de Frete</h2>
+        <label>CEP de origem: <input type="text" id="cepOrigem"></label>
+        <label>CEP de destino: <input type="text" id="cepDestino"></label>
+        <label>Tipo da carga: <input type="text" id="tipoCarga"></label>
+        <label>Valor da nota fiscal: <input type="number" id="valorNota"></label>
+        <h3>Volumes</h3>
+        <label>Altura (cm): <input type="number" id="altura"></label>
+        <label>Largura (cm): <input type="number" id="largura"></label>
+        <label>Comprimento (cm): <input type="number" id="comprimento"></label>
+        <label>Peso (kg): <input type="number" id="peso"></label>
+        <button onclick="enviarWhatsApp()">Cotação Instantânea</button>
+    </div>
+
+    <script>
+        function enviarWhatsApp() {
+            const numero = "5511967164004";
+            const cepOrigem = document.getElementById("cepOrigem").value;
+            const cepDestino = document.getElementById("cepDestino").value;
+            const tipoCarga = document.getElementById("tipoCarga").value;
+            const valorNota = document.getElementById("valorNota").value;
+            const altura = document.getElementById("altura").value;
+            const largura = document.getElementById("largura").value;
+            const comprimento = document.getElementById("comprimento").value;
+            const peso = document.getElementById("peso").value;
+            
+            if (!cepOrigem || !cepDestino || !tipoCarga || !valorNota || !altura || !largura || !comprimento || !peso) {
+                alert("Por favor, preencha todos os campos antes de continuar.");
+                return;
+            }
+            
+            const mensagem = `*Solicitação de Cotação de Frete*%0A` +
+                `*Origem:* ${cepOrigem}%0A` +
+                `*Destino:* ${cepDestino}%0A` +
+                `*Tipo da carga:* ${tipoCarga}%0A` +
+                `*Valor da nota:* R$ ${valorNota}%0A` +
+                `*Dimensões:* ${altura}cm (A) x ${largura}cm (L) x ${comprimento}cm (C)%0A` +
+                `*Peso:* ${peso} kg`;
+            
+            window.open(`https://wa.me/${numero}?text=${mensagem}`, '_blank');
+        }
+    </script>
+</body>
+</html>
